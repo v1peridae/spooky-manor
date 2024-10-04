@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "OctoberCrow";
+  src: url("assets/OctoberCrow.woff2") format("woff2"), url("assets/OctoberCrow.woff") format("woff");
+}
+
+img {
+  height: 650px;
+  margin: 2%;
+  margin-bottom: 0;
+  margin-left: 7%;
+}
+
+body {
+  background: url("assets/page1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
