@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "OctoberCrow";
+  src: url("assets/OctoberCrow.woff2") format("woff2"), url("assets/OctoberCrow.woff") format("woff");
+}
+
+body {
+  background: url("assets/page2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+}
+
+img {
+  height: 100px;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  animation: blink 0.15s step-end infinite alternate;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
