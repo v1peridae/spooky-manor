@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: "OctoberCrow";
-  src: url("assets/OctoberCrow.woff2") format("woff2"), url("assets/OctoberCrow.woff") format("woff");
+  font-family: "restless";
+  src: url("assets/RestlessSoulBB-Bold.otf") format("opentype");
 }
 
 body {
@@ -37,4 +37,28 @@ img:hover {
   50% {
     opacity: 0;
   }
+}
+
+.introtxt {
+  font-family: "restless";
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  -webkit-text-stroke: #000000 3px;
+  background-color: #000000a1;
+}
+
+.introtxt a {
+  color: #722323;
+  text-decoration: none;
+  -webkit-text-stroke: #000000 1px;
+}
+
+.introtxt img {
+  height: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
