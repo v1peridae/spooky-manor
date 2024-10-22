@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: url("assets/page3.jpg");
+  background-image: url("assets/page4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -55,18 +55,34 @@ p {
 }
 
 .main-para {
-  background-image: url("assets/Rectangle 2.png");
-  background-size: cover;
   padding-bottom: 50px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 7%;
+  padding-top: 3%;
+  padding-right: 7%;
+}
+
+.main-para img:hover {
+  transform: scale(0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.main-para img {
+  transition: all 0.2s ease-in-out;
 }
 
 .sideimg {
   position: absolute;
-  left: 10;
-  top: 300px;
-  width: 200px;
-  z-index: -2;
+  left: 0;
+  top: 130px;
+  z-index: 0;
+}
+
+a {
+  color: #722323;
+  text-decoration: none;
 }

@@ -65,8 +65,7 @@ p {
 
 .sideimg {
   position: absolute;
-  left: 10;
-  top: 300px;
-  width: 200px;
-  z-index: -2;
+  right: 20px;
+  top: 130px;
+  z-index: 0;
 }
