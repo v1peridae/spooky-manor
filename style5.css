@@ -33,8 +33,8 @@ p {
   font-size: 1.7em;
   color: white;
   text-align: center;
-  margin-left: 14%;
-  margin-right: 14%;
+  margin-left: 20%;
+  margin-right: 20%;
   padding-bottom: 40px;
 }
 
@@ -55,14 +55,24 @@ p {
 }
 
 .main-para {
-  background-image: url("assets/Rectangle 2.png");
-  background-size: cover;
   padding-bottom: 50px;
-  align-items: center;
-  text-align: center;
-  margin-left: 10%;
-  margin-right: 10%;
+  display: grid;
+  column-gap: 50px;
+  row-gap: 50px;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 7%;
   padding-top: 3%;
+  padding-right: 7%;
+}
+
+.main-para img:hover {
+  transform: scale(0.8);
+  transition: all 0.2s ease-in-out;
+}
+
+.main-para img {
+  transition: all 0.2s ease-in-out;
 }
 
 .sideimg {
