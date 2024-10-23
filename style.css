@@ -10,15 +10,76 @@
   src: url("assets/OctoberCrow.woff2") format("woff2"), url("assets/OctoberCrow.woff") format("woff");
 }
 
-img {
-  height: 650px;
-  margin: 2%;
-  margin-bottom: 0;
-  margin-left: 7%;
+@font-face {
+  font-family: "restless";
+  src: url("assets/RestlessSoulBB-Bold.otf") format("opentype");
 }
 
-body {
-  background: url("assets/page1.jpg");
-  background-repeat: no-repeat;
+#blur-wrapper {
+  background: url("assets/page1.jpg") no-repeat center center;
   background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blur-background {
+  filter: blur(100px);
+}
+
+img {
+  height: 650px;
+  margin-bottom: 0;
+  position: absolute;
+  left: 10px;
+  top: 50px;
+}
+
+.popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+  border: #722323 2px dashed;
+  border-radius: 4px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.popup-content p {
+  font-family: "OctoberCrow", sans-serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #722323;
+}
+
+#close-btn {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #722323;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "restless";
+  border: #722323 2px dashed;
+}
+
+#close-btn:hover {
+  background-color: #722323;
+  color: #000;
+  border: #000 2px dashed;
 }
